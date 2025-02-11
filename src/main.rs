@@ -9,7 +9,7 @@ fn main() {
     env::set_var("RUST_LOG", "info");
     env_logger::init();
 
-    let download_dir = Path::new("~/Downloads/cleaner_test").expand_home().unwrap();
+    let download_dir = Path::new("~/Downloads").expand_home().unwrap();
     let now = chrono::Local::now();
     info!("Starting cleaner at: {}", now);
 
